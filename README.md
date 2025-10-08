@@ -52,24 +52,6 @@ The purpose of this project is educational — to demonstrate core OS concepts i
 
 ---
 
-## Project Structure
-
-```
-rudimentary_os_cli/
-│
-├── os_core/
-│   ├── __init__.py
-│   ├── process.py           # Defines Process class and states
-│   ├── scheduler.py         # Handles scheduling logic
-│   ├── critical_section.py  # Manages mutex locks
-│
-├── cli.py                   # Command-line interface entry point
-├── main.py                  # Initializes and runs the OS CLI
-└── README.md
-```
-
----
-
 ## Installation and Setup
 
 1. Clone the repository:

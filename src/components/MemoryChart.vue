@@ -94,7 +94,7 @@ export default defineComponent({
             { label: 'RAM', data: ramData, backgroundColor: '#4C7EA8', stack: 'a' },
             { label: 'Cache', data: cacheData, backgroundColor: '#D18E6C', stack: 'a' },
             { label: 'ROM', data: romData, backgroundColor: '#9FBF88', stack: 'a' },
-            { label: 'VRAM', data: vramData, backgroundColor: '#58A689', stack: 'a' },
+            { label: 'VRAM', data: vramData, backgroundColor: '#7a58a6', stack: 'a' },
             { label: 'HDD', data: hddData, backgroundColor: '#C45A5A', stack: 'a' },
           ],
         },

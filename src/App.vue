@@ -40,7 +40,12 @@ export default defineComponent({
     ])
 
     const processes = ref<Process[]>([
-      { name: 'Process 1', color: 'red', memoryUsage: 400, useGPU: false },
+      { name: 'smss.exe', color: 'green', memoryUsage: 130, useGPU: false },
+      { name: 'csrss.exe', color: 'red', memoryUsage: 70, useGPU: false },
+      { name: 'winlogon.exe', color: 'blue', memoryUsage: 50, useGPU: true },
+      { name: 'lsass.exe', color: 'orange', memoryUsage: 100, useGPU: false },
+      { name: 'svchost.exe', color: 'teal', memoryUsage: 40, useGPU: false },
+      { name: 'explorer.exe', color: 'purple', memoryUsage: 69, useGPU: true },
     ])
 
     const pastelColors = ['green', 'gray', 'orange', 'black', 'teal']

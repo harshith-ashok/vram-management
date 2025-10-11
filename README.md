@@ -1,48 +1,72 @@
-# mem-dashboard
+# Memory Manager Visualization
 
-This template should help get you started developing with Vue 3 in Vite.
+[![Vue 3](https://img.shields.io/badge/Vue-3.3.0-brightgreen)](https://vuejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.5-teal)](https://tailwindcss.com/)
+[![DaisyUI](https://img.shields.io/badge/DaisyUI-2.7-purple)](https://daisyui.com/)
+[![Chart.js](https://img.shields.io/badge/Chart.js-4-orange)](https://www.chartjs.org/)
+[![Ollama LLM](https://img.shields.io/badge/Ollama-LLM-lightgrey)](https://ollama.com/)
 
-## Recommended IDE Setup
+A **Vue 3 + TypeScript** app to simulate system memory management. Visualizes how processes consume RAM, Cache, ROM, VRAM, and HDD, with **interactive sliders** and **AI optimization** using an Ollama LLM.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## Features
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Dynamic **stacked horizontal bar chart** for memory usage
+- Interactive sliders to control **RAM/VRAM allocation** per process
+- **GPU toggle** for VRAM usage
+- **AI Optimization**:
+  - Optimizes RAM and VRAM distribution
+  - Marks optimized processes with a **🤖 badge**
 
-## Type Support for `.vue` Imports in TS
+- Light theme with **Tailwind + DaisyUI**
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## Memory Types & Base Sizes
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+| Memory Type | Base Size |
+| ----------- | --------- |
+| RAM         | 1 GB      |
+| Cache       | 500 MB    |
+| ROM         | 32 MB     |
+| VRAM        | 8 GB      |
+| HDD         | 100 GB    |
 
-## Project Setup
+---
 
-```sh
+## Quick Start
+
+```bash
+# Clone repo
+git clone <repo_url>
+cd memory-manager
+
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Run dev server
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+Open in browser: `http://localhost:5173`
 
-```sh
-npm run build
-```
+---
 
-### Lint with [ESLint](https://eslint.org/)
+## How to Use
 
-```sh
-npm run lint
-```
+1. **Add a new process** using the input and `Add` button.
+2. Adjust **memory usage** with sliders.
+3. Toggle **GPU** for VRAM usage.
+4. Click **“Optimize with AI”** to redistribute RAM and VRAM efficiently.
+5. Chart updates dynamically to reflect changes.
+
+---
+
+## Future Enhancements
+
+- Process priority-based allocation
+- Page fault & swap simulation
+- CPU usage visualization
+- Export snapshots as JSON
